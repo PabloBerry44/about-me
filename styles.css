@@ -1,0 +1,147 @@
+*
+{
+    font-family: 'Hind Siliguri', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(255, 255, 255);
+    color: rgb(15, 15, 15);
+}
+::selection{
+    background: rgb(182, 182, 182);
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.hero h1{
+    font-size: 70px;
+    line-height: 80px;
+}
+.hero h2{
+    opacity: .8;
+}
+.cards{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+    width: 85%;
+}
+.html-card, .css-card, .js-card, .php-card, .sql-card
+{
+    font-size: 23px;
+    margin: 5%;
+    width: 300px;
+    padding: 10px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    box-shadow:
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.html-card{
+    border: 2px solid rgb(252, 99, 71);
+}
+.css-card{
+    border: 2px solid rgb(71, 166, 255);
+}
+.js-card{
+    border: 2px solid rgb(219, 223, 0);
+}
+.php-card{
+    border: 2px solid rgb(142, 81, 255);
+}
+.sql-card{
+    border: 2px solid rgb(25, 117, 255);
+}
+footer{
+    font-size: 23px;
+    margin-top: 150px;
+    padding: 50px 15px;
+    border-top: 30px solid rgb(245, 245, 245);
+    background: rgb(240, 240, 240);
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+form{
+    width: 100%;
+}
+.socials{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.row img{
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: black;
+    opacity: .9;
+}
+.row p{
+    margin-left: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    max-width: 430px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: rgb(228, 228, 228);
+}
+@media (prefers-color-scheme: dark) 
+{
+    body {
+        color: rgb(225, 225, 225);
+        background-color: rgb(30, 30, 30);
+    }
+    ::selection{
+        background: rgb(102, 102, 102);
+    }
+    form input, form textarea{
+        background: rgb(24, 24, 24);
+        color: rgb(225, 225, 225);
+        background: rgb(17, 17, 17);
+    }
+    footer{
+        background: rgb(0, 0, 0);
+        border-top: 30px solid rgb(17, 17, 17);
+    }
+}
+@media only screen and (min-width:900px)
+{
+    .hero{
+        padding-left: 100px;
+    }
+    form input, form textarea{
+        width: 90%;
+    }
+    form{
+        width: 50%;
+    }
+    .socials{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        padding: 150px 0px;
+    }
+}

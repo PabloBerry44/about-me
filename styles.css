@@ -104,7 +104,10 @@ form input, form textarea{
     outline: none;
     font-size: 20px;
     padding: 5px 10px;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(219, 219, 219);
+}
+textarea{
+    height: 220px;
 }
 @media (prefers-color-scheme: dark) 
 {
@@ -116,9 +119,8 @@ form input, form textarea{
         background: rgb(102, 102, 102);
     }
     form input, form textarea{
-        background: rgb(24, 24, 24);
+        background: rgb(29, 29, 29);
         color: rgb(225, 225, 225);
-        background: rgb(17, 17, 17);
     }
     footer{
         background: rgb(0, 0, 0);

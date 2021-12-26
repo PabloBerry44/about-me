@@ -1,8 +1,8 @@
 *{
     font-family: 'Hind Siliguri', sans-serif;
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 body{
     background: rgb(255, 255, 255);
@@ -12,8 +12,8 @@ body{
     background: rgb(182, 182, 182);
 }
 ::-webkit-scrollbar{
-    width: 10px;
     background-color: rgb(187, 187, 187);
+    width: 10px;
 }
 ::-webkit-scrollbar-track{
     border-radius: 10px;
@@ -26,15 +26,15 @@ body{
   background: rgb(145, 145, 145); 
 }
 .hero{
-    width: 100%;
-    height: 100vh;
-    display: flex;
     align-items: center;
     padding-left: 10px;
+    display: flex;
+    height: 100vh;
+    width: 100%;
 }
 .hero h1{
-    font-size: 70px;
     line-height: 80px;
+    font-size: 70px;
 }
 .hero h2{
     opacity: .8;
@@ -47,16 +47,15 @@ body{
     width: 85%;
 }
 .html-card, .css-card, .js-card, .php-card, .sql-card{
+    box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
     font-size: 23px;
-    margin: 5%;
-    width: 300px;
+    display: block;
     padding: 25px;
     height: 300px;
-    border-radius: 10px;
-    display: block;
-    box-shadow:
-    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-    100px 100px 80px rgba(0, 0, 0, 0.07);
+    width: 300px;
+    margin: 5%;
 }
 .html-card{
     border: 2px solid rgb(252, 99, 71);
@@ -74,12 +73,12 @@ body{
     border: 2px solid rgb(25, 117, 255);
 }
 footer{
-    font-size: 23px;
-    margin-top: 150px;
-    padding: 50px 15px;
     border-top: 30px solid rgb(245, 245, 245);
     background: rgb(240, 240, 240);
     justify-content: center;
+    padding: 50px 15px;
+    margin-top: 150px;
+    font-size: 23px;
     flex-wrap: wrap;
     display: flex;
 }
@@ -91,40 +90,40 @@ form{
     margin-bottom: 50px;
 }
 .row{
-    display: flex;
     align-items: center;
+    transition: 200ms;
     margin-top: 10px;
     cursor: pointer;
-    transition: 200ms;
+    display: flex;
 }
 .row:hover{
     transform: translateX(2px);
 }
 .row img{
-    width: 50px;
     border: 1px solid black;
-    border-radius: 8px;
     background: black;
+    border-radius: 8px;
+    width: 50px;
     opacity: .9;
 }
 .row a{
     text-decoration: none;
-    color: black;
     margin-left: 10px;
+    color: black;
 }
 form input, form textarea{
-    width: 100%;
-    max-height: 220px;
-    max-width: 430px;
-    border: none;
-    border-radius: 5px;
-    resize: none;
-    outline: none;
-    font-size: 20px;
-    padding: 5px 10px;
     background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+    padding: 5px 10px;
+    max-height: 220px;
     transition: 200ms;
+    max-width: 430px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    resize: none;
     color: black;
+    width: 100%;
 }
 .submit:hover{
     background: rgb(172, 172, 172);
@@ -133,15 +132,15 @@ form input, form textarea{
 @media (prefers-color-scheme: dark) 
 {
     body {
-        color: rgb(225, 225, 225);
         background-color: rgb(30, 30, 30);
+        color: rgb(225, 225, 225);
     }
     ::selection{
         background: rgb(102, 102, 102);
     }
     ::-webkit-scrollbar{
-        width: 10px;
         background-color: rgb(0, 0, 0);
+        width: 10px;
     }
     ::-webkit-scrollbar-track{
         border-radius: 10px;
@@ -158,14 +157,14 @@ form input, form textarea{
         color: rgb(225, 225, 225);
     }
     footer{
-        background: rgb(0, 0, 0);
         border-top: 30px solid rgb(17, 17, 17);
-    }
-    .row a{
-        color: rgb(225, 225, 225);
+        background: rgb(0, 0, 0);
     }
     .submit:hover{
         background: rgb(59, 59, 59);
+    }
+    .row a{
+        color: rgb(225, 225, 225);
     }
 }
 @media only screen and (min-width:900px)
@@ -180,9 +179,9 @@ form input, form textarea{
         width: 50%;
     }
     .socials{
-        width: 50%;
-        display: flex;
         justify-content: center;
+        display: flex;
+        width: 50%;
     }
     footer{
         padding: 150px 0px;

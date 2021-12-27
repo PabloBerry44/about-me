@@ -73,7 +73,7 @@ body{
     height: 300px;
     width: 300px;
 }
-.html-card:hover, .css-card:hover, .js-card:hover, .php-card:hover, .sql-card:hover{
+.card-move{
     transform: translate(5px, -5px);
 }
 .html-card{
@@ -187,12 +187,6 @@ form input, form textarea{
     }
     .html-card, .css-card, .js-card, .php-card, .sql-card{
         background-color: rgb(30, 30, 30);
-    }
-    .html-card:-moz-drag-over{
-        transform: translateX(10px);
-    }
-    .html-card::-ms-thumb{
-        transform: translateX(10px);
     }
     .submit:hover{
         background: rgb(59, 59, 59);

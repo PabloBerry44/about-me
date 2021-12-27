@@ -191,6 +191,9 @@ form input, form textarea{
     .html-card:-moz-drag-over{
         transform: translateX(10px);
     }
+    .html-card::-ms-thumb{
+        transform: translateX(10px);
+    }
     .submit:hover{
         background: rgb(59, 59, 59);
     }

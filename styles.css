@@ -204,11 +204,19 @@ form input, form textarea{
 @media (prefers-color-scheme: dark) 
 {
     body{
+<<<<<<< HEAD
         background: var(--dark-bg-hero);
         color: var(--light-text);
     }
     .hero{
         background: var(--dark-bg-hero);
+=======
+        background-color: rgb(55, 55, 55);
+        color: rgb(225, 225, 225);
+    }
+    .hero{
+        background-color: rgb(55, 55, 55);
+>>>>>>> 3ee95103afc2103eb4c9911a8eab5bfd3515c2b8
     }
     .inner-hero{
         color: var(--light-text);

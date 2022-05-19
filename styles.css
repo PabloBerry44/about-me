@@ -10,34 +10,6 @@
     --light-bg-footer: rgb(240, 240, 240);
 }
 
-@keyframes one{
-    0% {transform: none}
-    25% {transform: translate(300px, 0px);}
-    50% {transform: translate(300px, 300px);}
-    75% {transform: translate(0px, 300px);}
-    100% {transform: none}
-}
-@keyframes two{
-    0% {transform: none}
-    25% {transform: translate(0px, 300px);}
-    50% {transform: translate(-300px, 300px);}
-    75% {transform: translate(-300px, 0px);}
-    100% {transform: none}
-}
-@keyframes three{
-    0% {transform: none}
-    25% {transform: translate(0px, -300px);}
-    50% {transform: translate(300px, -300px);}
-    75% {transform: translate(300px, 0px);}
-    100% {transform: none}
-}
-@keyframes four{
-    0% {transform: translate(0px);}
-    25% {transform: translate(-300px, 0px);}
-    50% {transform: translate(-300px, -300px);}
-    75% {transform: translate(0px, -300px);}
-    100% {transform: none}
-}
 *{
     font-family: 'Hind Siliguri', sans-serif;
     box-sizing: border-box;
@@ -113,37 +85,6 @@ html{
     justify-content: center;
     transition: 1s;
 }
-.one{
-    background: rgb(255,81,81);
-    background: linear-gradient(135deg, rgba(255,81,81,1) 0%, rgba(255,136,57,1) 100%);
-    animation: one 20s infinite ease-in-out;
-}
-.two{
-    background: rgb(81,166,255);
-    background: linear-gradient(135deg, rgba(81,166,255,1) 0%, rgba(20,84,255,1) 100%);
-    animation: two 20s infinite ease-in-out;
-}
-.three{
-    background: rgb(251,255,81);
-    background: linear-gradient(135deg, rgba(251,255,81,1) 0%, rgba(255,181,20,1) 100%);
-    animation: three 20s infinite ease-in-out;
-}
-.four{
-    background: rgb(203,81,255);
-    background: linear-gradient(135deg, rgba(203,81,255,1) 0%, rgba(20,143,255,1) 100%);
-    animation: four 20s infinite ease-in-out;
-}
-.one, .two, .three, .four{
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
-    box-shadow:
-    0px 0px 3.6px rgba(0, 0, 0, 0.045),
-    0px 0px 10px rgba(0, 0, 0, 0.065),
-    0px 0px 24.1px rgba(0, 0, 0, 0.085),
-    0px 0px 80px rgba(0, 0, 0, 0.13)
-  ;
-}
 .container{
     background: var(--light-bg-hero-container);
     position: absolute;
@@ -172,7 +113,7 @@ html{
     width: 300px;
     margin: 5%;
 }
-.html-card, .css-card, .js-card, .php-card, .python-card{
+.card{
     box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
     100px 100px 80px rgba(0, 0, 0, 0.07);
     background: var(--light-bg-hero-container);
@@ -182,8 +123,8 @@ html{
     line-height: 1.5em;
     display: block;
     padding: 30px;
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
 }
 .card-move{
     transform: translate(5px, -5px);
@@ -266,6 +207,13 @@ form input, form textarea{
     background: rgb(172, 172, 172);
     cursor: pointer;
 }
+.scrollTop{
+    text-decoration: none;
+    color: var(--dark-text);
+    position: absolute;
+    right: 1em;
+    bottom: .1em;
+}
 @media (prefers-color-scheme: dark) 
 {
     body{
@@ -309,7 +257,7 @@ form input, form textarea{
     .card-wrapper{
         background: rgb(104, 104, 104);
     }
-    .html-card, .css-card, .js-card, .sql-card, .php-card, .python-card{
+    .card{
         background: rgb(30, 30, 30);
     }
     .submit:hover{
@@ -317,6 +265,9 @@ form input, form textarea{
     }
     .row{
         color: var(--light-text);
+    }
+    .scrollTop{
+        color: var(--light-text)
     }
 }
 @media only screen and (min-width:900px)
@@ -346,5 +297,15 @@ form input, form textarea{
 {
     .animation{
         display: none;
+    }
+}
+@media only screen and (min-width:2000px)
+{
+    .card-wrapper{
+        width: 15vw;
+        height: 15vw;
+    }
+    .card{
+        font-size: 1vw;
     }
 }

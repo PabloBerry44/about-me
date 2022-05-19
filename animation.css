@@ -1,0 +1,60 @@
+@keyframes one{
+    0% {transform: none}
+    25% {transform: translate(300px, 0px);}
+    50% {transform: translate(300px, 300px);}
+    75% {transform: translate(0px, 300px);}
+    100% {transform: none}
+}
+@keyframes two{
+    0% {transform: none}
+    25% {transform: translate(0px, 300px);}
+    50% {transform: translate(-300px, 300px);}
+    75% {transform: translate(-300px, 0px);}
+    100% {transform: none}
+}
+@keyframes three{
+    0% {transform: none}
+    25% {transform: translate(0px, -300px);}
+    50% {transform: translate(300px, -300px);}
+    75% {transform: translate(300px, 0px);}
+    100% {transform: none}
+}
+@keyframes four{
+    0% {transform: translate(0px);}
+    25% {transform: translate(-300px, 0px);}
+    50% {transform: translate(-300px, -300px);}
+    75% {transform: translate(0px, -300px);}
+    100% {transform: none}
+}
+
+.one{
+    background: rgb(255,81,81);
+    background: linear-gradient(135deg, rgba(255,81,81,1) 0%, rgba(255,136,57,1) 100%);
+    animation: one 20s infinite ease-in-out;
+}
+.two{
+    background: rgb(81,166,255);
+    background: linear-gradient(135deg, rgba(81,166,255,1) 0%, rgba(20,84,255,1) 100%);
+    animation: two 20s infinite ease-in-out;
+}
+.three{
+    background: rgb(251,255,81);
+    background: linear-gradient(135deg, rgba(251,255,81,1) 0%, rgba(255,181,20,1) 100%);
+    animation: three 20s infinite ease-in-out;
+}
+.four{
+    background: rgb(203,81,255);
+    background: linear-gradient(135deg, rgba(203,81,255,1) 0%, rgba(20,143,255,1) 100%);
+    animation: four 20s infinite ease-in-out;
+}
+.one, .two, .three, .four{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow:
+    0px 0px 3.6px rgba(0, 0, 0, 0.045),
+    0px 0px 10px rgba(0, 0, 0, 0.065),
+    0px 0px 24.1px rgba(0, 0, 0, 0.085),
+    0px 0px 80px rgba(0, 0, 0, 0.13)
+  ;
+}
